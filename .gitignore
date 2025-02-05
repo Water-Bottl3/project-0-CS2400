@@ -1,0 +1,5 @@
+/.idea
+*.csv
+*.jar
+*.txt
+/out
