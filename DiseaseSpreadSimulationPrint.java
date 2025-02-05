@@ -135,7 +135,6 @@ public class DiseaseSpreadSimulationPrint {
 
 
         // Output the grid for this time step
-        //outputToFile((timeStep));
         printStats((timeStep));
     }
 
@@ -167,24 +166,6 @@ public class DiseaseSpreadSimulationPrint {
         }
         //System.out.println("infected neighbors: " + infectedCount); // displays infected neighbors for each individual
         return infectedCount;
-    }
-
-    private static void outputToFile(int timeStep) throws IOException
-    {
-        File file = new File("./grid-timestep-" + timeStep + ".txt"); //Create .txt file
-        FileWriter writer = new FileWriter(file); //Write to .txt file
-
-
-        //Display the current grid
-        for (int row = 0; row < grid.length; row++)
-        {
-            for (int col = 0; col < grid[row].length; col++)
-            {
-                writer.write(grid[row][col] + " ");
-            }
-            writer.write("\n");
-        }
-        writer.close(); //Closes the file
     }
 
     private static void printStats(int timeStep)
