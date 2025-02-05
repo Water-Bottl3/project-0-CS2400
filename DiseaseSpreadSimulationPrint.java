@@ -74,7 +74,7 @@ public class DiseaseSpreadSimulationPrint {
 
         // Print grid at timestep 0 before passing it to simulateStep()
         printStats(0);
-        outputToFile(0);
+        //outputToFile(0);
 
 
         // Simulate the disease spread starting at timeStep 1
@@ -135,7 +135,7 @@ public class DiseaseSpreadSimulationPrint {
 
 
         // Output the grid for this time step
-        outputToFile((timeStep));
+        //outputToFile((timeStep));
         printStats((timeStep));
     }
 
